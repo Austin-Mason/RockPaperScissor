@@ -24,7 +24,7 @@ public class Main {
         };
     }
 
-    // Method to determine the winner and display the result
+
     public static void theWinner(String moveA, String moveB) {
         System.out.println("\n Result:");
         System.out.println(moveName(moveA) + " vs " + moveName(moveB));
@@ -45,7 +45,7 @@ public class Main {
         }
     }
 
-    // Method to return the winning phrase
+
     public static String resultPhrase(String winnerMove, String loserMove) {
         if (winnerMove.equals("R") && loserMove.equals("S")) return "Rock beats Scissors";
         if (winnerMove.equals("P") && loserMove.equals("R")) return "Paper covers Rock";
@@ -60,11 +60,11 @@ public class Main {
         System.out.println("Rock paper scissors");
 
         do {
-            // Get moves from both players
+
             String moveA = validMove(scanner, "Player A");
             String moveB = validMove(scanner, "Player B");
 
-            // Determine and display the winner
+
             theWinner(moveA, moveB);
 
             // Prompt to play again
