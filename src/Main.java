@@ -67,7 +67,7 @@ public class Main {
 
             theWinner(moveA, moveB);
 
-            // Prompt to play again
+
             System.out.print("\n Play again? (Y/N): ");
             playAgain = scanner.nextLine().trim().toUpperCase();
 
